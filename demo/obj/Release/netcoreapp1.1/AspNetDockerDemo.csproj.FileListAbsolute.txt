@@ -1,0 +1,8 @@
+/Users/blackie/Desktop/DEV/blackie1019/AspNetDockerDemo/bin/Release/netcoreapp1.1/AspNetDockerDemo.deps.json
+/Users/blackie/Desktop/DEV/blackie1019/AspNetDockerDemo/bin/Release/netcoreapp1.1/AspNetDockerDemo.runtimeconfig.json
+/Users/blackie/Desktop/DEV/blackie1019/AspNetDockerDemo/bin/Release/netcoreapp1.1/AspNetDockerDemo.runtimeconfig.dev.json
+/Users/blackie/Desktop/DEV/blackie1019/AspNetDockerDemo/bin/Release/netcoreapp1.1/AspNetDockerDemo.dll
+/Users/blackie/Desktop/DEV/blackie1019/AspNetDockerDemo/bin/Release/netcoreapp1.1/AspNetDockerDemo.pdb
+/Users/blackie/Desktop/DEV/blackie1019/AspNetDockerDemo/obj/Release/netcoreapp1.1/AspNetDockerDemo.AssemblyInfo.cs
+/Users/blackie/Desktop/DEV/blackie1019/AspNetDockerDemo/obj/Release/netcoreapp1.1/AspNetDockerDemo.dll
+/Users/blackie/Desktop/DEV/blackie1019/AspNetDockerDemo/obj/Release/netcoreapp1.1/AspNetDockerDemo.pdb
