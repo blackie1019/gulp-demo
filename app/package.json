@@ -1,0 +1,19 @@
+{
+  "name": "gulp-webpack-demo",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-insert": "^0.5.0",
+    "gulp-uglify": "^2.1.2",
+    "run-sequence": "^1.2.2",
+    "webpack": "^2.4.1"
+  },
+  "devDependencies": {
+    "gulp-html-replace": "^1.6.2"
+  },
+  "author": "blackie (http://blackie1019.github.io)",
+  "license": "ISC"
+}
