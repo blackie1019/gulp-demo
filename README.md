@@ -1,6 +1,8 @@
 # gulp-demo #
 
-Gulp general use case and using Gulp to solve basic JS dependency problem
+Gulp general use case and using Gulp to solve basic JS dependency problem.
+
+Detail Post on my [Blog](http://blackie1019.github.io) - [Using Gulp to help JS and Css Concat and Minify](http://blackie1019.github.io/2017/04/19/Using-Gulp-to-help-JS-and-Css-Concat-and-Minify/)
 
 # Gulp Introduction #
 
