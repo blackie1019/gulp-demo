@@ -4,11 +4,13 @@ var concat = require('gulp-concat');
 var runSequence = require('run-sequence');
 var del = require('del');
 var htmlreplace = require('gulp-html-replace');
+var rename = require('gulp-rename');
 var insert = require('gulp-insert');
 
 var public_dir = __dirname + '/public';
 var index = '/index.html';
-var app_min ='/app.min.js'
+var app_js ='/app.js';
+var app_js_min = '/app.min.js';
 
 var src_dir = public_dir + '/src';
 var src_js = src_dir + '/js';
@@ -16,7 +18,6 @@ var src_index = src_dir + index;
 
 var bundle_dir = public_dir + '/bundle';
 var bundle_js = bundle_dir + '/js';
-var bundle_js_app_min = bundle_js + app_min;
 var bundle_index = bundle_dir + index;
 
 var insert_js_prepend = 'console.log(111) /n';
@@ -44,18 +45,19 @@ gulp.task('concat-js', function() {
              bundle_js + '/lib-a.js',
              bundle_js + '/lib-b.js',
         ])
-        .pipe(concat(app_min))
-        .pipe(gulp.dest(bundle_dir));
+        .pipe(concat(app_js))
+        .pipe(gulp.dest(bundle_js));
 });
 
 gulp.task('minify-js', function() {
-    return gulp.src(bundle_js)
+    return gulp.src(bundle_js + app_js)
         .pipe(uglify())
-        .pipe(gulp.dest(bundle_js));
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest(bundle_dir));
 })
 
 gulp.task('update-js', function() {
-    return gulp.src(bundle_js_app_min)
+    return gulp.src(bundle_js + app_js)
         .pipe(insert.append(insert_js_append))
         .pipe(insert.prepend(insert_js_prepend))
         .pipe(gulp.dest(bundle_dir));
